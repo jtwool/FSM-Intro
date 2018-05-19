@@ -5,7 +5,7 @@ Intro to Programming (JavaScript)
 
 *Summer 2018, M/W/F, 9am to 11am*
 
-**Copyright** *All course materials (c) J.T. Wolohan 2018, licensed for re-use under the Creative Commons Attribution-ShareAlike 4.0 International. The [human readable](https://creativecommons.org/licenses/by-sa/4.0/) and [official](https://creativecommons.org/licenses/by-sa/4.0/legalcode) versions of this license are made available online [by the CreativeCommons](https://creativecommons.org/).*
+**Copyright** *All course materials (c) J.T. Wolohan 2018, licensed for re-use under the Creative Commons Attribution-ShareAlike 4.0 International. The [human readable](https://creativecommons.org/licenses/by-sa/4.0/) and [official](https://creativecommons.org/licenses/by-sa/4.0/legalcode) versions of this license are made available online [by the CreativeCommons](https://creativecommons.org/). Source code (in .js and .html files) for this course are licensed under the Mozilla Public License, the text of which is [available here.](https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt)*
 
 ### Description
 Programming is an interdisciplinary skill that requires a little of each of language, math, logic, critical thinking and problem solving. This course introduces students to the foundational concepts of programming in six sessions over two weeks. Each day, students will learn new concepts during a brief lecture, practice new skills during pair-programming time, play a brief creativity game, and work-together to build the day's capstone project.
