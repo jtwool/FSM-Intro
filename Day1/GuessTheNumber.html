@@ -1,12 +1,22 @@
 <html>
-<body>
+<head>
+<script type="text/javascript" src="./GuessTheNumber.js"></script>	
+</head>
+<body> 
+<div style='margin-left:25%;margin-top:5em;border: 1px solid grey; text-align:center;margin-right:25%;padding:1em;
+	    box-shadow: 4px 5px #C8C8C8;border-radius:1em;' id="StartBox">
+<p>Enter a number between 1-50 for the computer to guess</p>
+<input type="text" width=25 id="target"/>
+<input type="button" value="Start!" onclick="setTarget()" />
+</div>
 <div style='margin-left:25%;margin-top:5em;border: 1px solid grey; text-align:center;margin-right:25%;padding:5em;
 	    box-shadow: 4px 5px #C8C8C8;border-radius:1em;'>
 	<h1>Guess the Number Game</h1>
-	<p>The Computer Guesses: <span id="CurrentGuess">1</span>.</br> The computer has made <span id="NumGuesses">1</span> guesses.</p>
-<input type="button" value="Lower" id="lower"/>
-<input type="button" value="Correct" id="correct"/>
-<input type="button" value="Higher" id="higher"/>
+	<p>The Computer Guesses: <span id="CurrentGuess">#</span></br> The computer has made <span id="NumGuesses">#</span> guesses.</p>
+<input type="button" value="Lower" id="lower" onclick="guessIsLow()"/>
+<input type="button" value="Correct" id="correct" onclick="guessIsRight()"/>
+<input type="button" value="Higher" id="higher" onclick="guessIsHigh()"/>
+<p>Just in case you forgot... your number is <span id="myNum" style="font-weight:bold;">#</span>
 </div>
 </body>
 </html>
