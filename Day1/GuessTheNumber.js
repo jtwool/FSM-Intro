@@ -1,5 +1,5 @@
 min = 0
-max = 50
+max = 51
 target = 0
 cur = 0
 guesses = 0
@@ -15,32 +15,32 @@ setTarget = function(){
 }
 
 guessIsLow = function(){
-  max = cur
-  cur = Math.floor(.5*(max-min) + min) 
-  document.getElementById("CurrentGuess").innerText = cur
-  guesses += 1
-  document.getElementById("NumGuesses").innerText = guesses
-  checkForWin()
+  max = cur;
+  cur = Math.floor(.5*(max-min) + min); 
+  document.getElementById("CurrentGuess").innerText = cur;
+  guesses += 1;
+  document.getElementById("NumGuesses").innerText = guesses;
+  checkForWin();
 }
 
 guessIsHigh = function(){
-  min = cur
-  cur = Math.floor(.5*(max-min) + min) 
-  document.getElementById("CurrentGuess").innerText = cur
-  guesses += 1
-  document.getElementById("NumGuesses").innerText = guesses
+  min = cur;
+  cur = Math.floor(.5*(max-min) + min) ;
+  document.getElementById("CurrentGuess").innerText = cur;
+  guesses += 1;
+  document.getElementById("NumGuesses").innerText = guesses;
   checkForWin()
 }
 
 checkForWin = function(){
   if (cur == target){
-  alert("The computer guessed your number in "+guesses+" guesses!")
-  alert("Enter a new number to play again.")
-  document.getElementById("StartBox").hidden =  false
-  min = 0
-  max = 50
-  target = 0
-  cur = 0
-  guesses = 0  
+    alert("The computer guessed " +cur+" and got your number in "+guesses+" guesses!")
+    alert("Enter a new number to play again.")
+    document.getElementById("StartBox").hidden =  false
+    min = 0
+    max = 50
+    target = 0
+    cur = 0
+    guesses = 0  
   }
 }
