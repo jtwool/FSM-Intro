@@ -1,4 +1,4 @@
-// Problem Set One: Integers and Functions
+// Problem Set Two: Strings
 // FSM Intro to Programming, Summer '18
 // (c) J.T. Wolohan, 2018
 // MPL 2.0
