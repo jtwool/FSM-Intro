@@ -12,34 +12,33 @@ scenes = [
 //SCENE 5
 "You've decided to sneak into the dragon's lair and deal with it from the shadows. You hike to the dragon's lair and enter through a hidden side path. You crawl through winding caverns, making extra effert to stay quiet. It pays off! When you arrive, the dragon is asleep. You compose yourself and begin your approach. You walk right up to the dragon long mouth. From your pocket you take a bag filled with a poisonous powder. As you go to open the powder, you accidentally take a deep breath of the poison yourself. You begin to feel very tired and stumble to your knee. The dragon's eyes open wide on the sound of your knee against the gold coins that cover the lair. You try to rise and run or fight, but you cannot. You fall to the ground. Your eyes shut slowly. The blurry sight of the dragon is the last thing you see. THE END."]
 
-acceptTheChallenge = function(){pickAChoice(0)}
-denyTheChallenge = function(){pickAChoice(1)}
-fightTheDragon = function(){pickAChoice(2)}
-sneakIntoItsLair = function(){pickAChoice(4)}
+scene = null
+choice1 = "None"
+choice2 = "None"
 
-choice1 = ["Fight the dragon","",]
-choice2 = ["Sneak into its lair","",]
-choice1go = [2,-1,-1,-1,-1,-1]
-choice2go = [4,-1,-1,-1,-1,-1]
-
-pickAChoice = function(n){
-  new_scene = scenes[n]
-  new_choice1 = choice1[n]
-  new_choice1go = choice1go[n]
-  new_choice2 = choice2[n]
-  new_choice2go = choice2go[n]
-  document.getElementById("story").innerText = new_scene
-  if (new_choice1go == -1){
+choice1 = function(){
+  if (scene==null){
+    document.getElementById("story").innerText = scenes[0]
+    document.getElementById("option1").value = "Fight the dragon"
+    document.getElementById("option2").value = "Sneak into the dragon's lair"
+    scene = 0
+  }
+  else if (scene==0){
+    document.getElementById("story").innerText = scenes[2]
     document.getElementById("option1").hidden = true
     document.getElementById("option2").hidden = true
   }
-  else {
-  document.getElementById("option1").value = new_choice1
-  document.getElementById("option1").onclick = new_choice1go
-  document.getElementById("option2").value = new_choice2
-  document.getElementById("option2").onclick = new_choice2go
-  }
 }
 
-choice1go[0] = fightTheDragon
-choice2go[0] = sneakIntoItsLair
+choice2 = function(){
+  if (scene==null){
+    document.getElementById("story").innerText = scenes[1]
+    document.getElementById("option1").hidden = true
+    document.getElementById("option2").hidden = true
+  }
+  else if (scene==0){
+    document.getElementById("story").innerText = scenes[4]
+    document.getElementById("option1").hidden = true
+    document.getElementById("option2").hidden = true
+  }
+}
