@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+hr{margin:2.5em;}
+</style>
+<script type="text/javascript" src="./RPS.js"></script>	
+</head>
+<body> 
+<div style='margin-left:25%;margin-top:5em;border: 1px solid grey; text-align:center;margin-right:25%;padding:1em 4em 2em 4em;
+	    box-shadow: 4px 5px #C8C8C8;border-radius:1em;'>
+	<h1>Rock-Paper-Scissors</h1>
+
+<p>You: <span id="yourscore">0</span> | PC: <span id="pcscore">0</score> 
+
+<hr>
+
+<p id="play_by_play"> No actions have occured yet ... </p>
+
+<hr>
+
+<p> Select your next throw. </p>
+
+<input type="button" value="Rock" id="rock" onclick="throw_rock()"/>
+<input type="button" value="Paper" id="paper" onclick="throw_paper()"/>
+<input type="button" value="Scissors" id="scissors" onclick="throw_scissors()"/>
+
+<hr>
+
+<input type="button" value="Start Over" id="option1" onclick="reset()"/>
+
+</div>
+</body>
+</html>
