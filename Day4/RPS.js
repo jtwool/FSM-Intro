@@ -85,3 +85,11 @@ throw_scissors = function(){
   throw_base()
   update_scores()
 }
+
+reset = function(){
+  pc_score = 0
+  player_score = 0
+  update_scores()
+  document.getElementById("play_by_play").innerText = "Game over. Let's play again."
+
+}
