@@ -43,8 +43,7 @@ makeGuess = function(){
 }
 
 start_game = function(){
- //word = random_word()
- word = "ostrich"
+ word = random_word()
  guesses = ""
  num_wrong = 0
  document.getElementById("guesses").innerText = guesses
