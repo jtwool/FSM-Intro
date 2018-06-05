@@ -31,7 +31,7 @@ makeGuess = function(){
   if (word.indexOf(next_guess)==-1){ 
     num_wrong += 1
     reload_gallows()
-    if (num_wrong == word.length) {
+    if (num_wrong == 6) {
       document.getElementById("you-lose").hidden = false
     }
   }
