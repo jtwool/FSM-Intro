@@ -1,0 +1,4 @@
+// wordsForHangman.js
+wordlist = [
+
+]

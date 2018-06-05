@@ -1,0 +1,31 @@
+<html>
+<head>
+<!-- <script type="text/javascript" src="./wordsForHangman.js"></script>	-->
+<script type="text/javascript" src="./Hangman.js"></script>	
+<style>
+#secret-word{font-size:2.5em;}
+#you-lose{font-size:1.25em;color:red;}
+#you-win{font-size:1.25em;color:green;}
+</style>
+</head>
+<body> 
+<div style='margin-left:25%;margin-top:2.5em;border: 1px solid grey; text-align:center;margin-right:25%;padding:1em 4em 2em 4em;
+	    box-shadow: 4px 5px #C8C8C8;border-radius:1em;'>
+	<h1>Hangman</h1>
+	<img id="gallows-img" src="images/hangman-0.png" height=275></img> </br>
+  <p id="you-lose">You lose. Sorry. </br> The word was: "<span id="trgt-word">""</span>"</p>
+  <p id="you-win">You win! Congratulations. </br> Do you want to play again?</p>
+	<p><span id="secret-word">_ _ _ _ _ _ _</span></p>
+	<p><strong>Guesses</strong> <span id="guesses"> </span></p>
+	
+	<input type="text" id="guess-entry" size=5 maxlength=1> </input>
+	<input type="button" value="Guess" onclick="makeGuess()"/>
+	</br></br>
+	<input type="button" value="Play Again" onclick="start_game()"/>
+  
+</div>
+<script>
+start_game()
+</script>
+</body>
+</html>
