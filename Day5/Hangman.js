@@ -3,7 +3,7 @@ guesses = ""
 word = "apple"
 
 reload_gallows = function(){
-  srcstr = "images/hangman-"+num_wrong+".png"
+  srcstr = "images/tree-"+num_wrong+".png"
   document.getElementById("gallows-img").src=srcstr
 }
 
@@ -31,7 +31,7 @@ makeGuess = function(){
   if (word.indexOf(next_guess)==-1){ 
     num_wrong += 1
     reload_gallows()
-    if (num_wrong == 6) {
+    if (num_wrong == 9) {
       document.getElementById("you-lose").hidden = false
     }
   }
