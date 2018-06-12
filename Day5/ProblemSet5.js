@@ -1,47 +1,48 @@
-// Problem Set Three: If-Else statements
+// Problem Set Five: for loops part II
 // FSM Intro to Programming, Summer '18
 // (c) J.T. Wolohan, 2018
 // MPL 2.0
 
 // Problem 1
-biggerThan5 = function(n){
-  // Return "Yay!" if n is bigger than 5
-}  
+simple_loop = function(xs){
+  // loop through every element of xs
+  // use console.log() to print the element
+  // e.g., console.log("hello")
+  // >>> hello
+  // hint: use the standard for(i=0;i<xs.length;x++)
   
-// Problem 2
-squareOrSquareRoot = function(n){
- // We want to make big numbers small and small numbers big!
- // Use Math.sqrt(n) to to turn numbers over 100 into small numbers
- // Use n*n to turn numbers smaller than 15 into big numbers
- // return your result
+}
+
+//Problem 2
+print_two = function(xs){
+  // loop through every element of xs
+  // use console.log() to print the element
+  // and the number of the iterator, i
 }
 
 // Problem 3
-changeCase = function(c){
-  // We can check if a letter is uppercase by comparing
-  // a letter c with c.toUpperCase()
-  // if a letter is uppercase, make it lowercase
-  // if a letter is lowercase, make it uppercase
-  // Then return that letter
+every_other = function(xs){
+  // print every other element of xs
+  // remember, we can check when something is even with: x % 2
+  // also remember i represents our place in the array
 }
 
 // Problem 4
-evenOrOdd = function(n){
- // We can check if a number is even by checking its remainder
- // We check the remainder with %
- // e.g., 3 % 2 => 1; 4 % 2 => 0
- // Return "even" if a number n is even
- // Return "odd" if a number n is odd
+unique_array = function(xs){
+  // We can consider the elements of an array unique if they are all
+  // different than one another
+  // return true if xs is unique
+  // return false if xs is not unique
+  // remember: x == y checks if two elements are the same
+  // hint: Use two loops through the elements of xs
+  // hint: for your second loop, use for(j=i+1;j<xs.length;j++)
 }
 
 // Problem 5
-combine_functions = function(i){
-  // we can check if i is a letter by comparing its "prototype" to that off a 
-  // string, e.g., i.__proto__ == "Letter".__proto__ ==> true
-  // we can check if i is a number in the same way
-  // i.__proto__ == 12 ==> true
-  // Check if i is a number or a letter
-  // If i is a number, return "odd" if i is odd and "even" if i is even
-  // If i is a letter, return its uppercase if it is lowercase
-  // return its lowercase if it is uppercase
+interlace = function(xs,ys){
+  // Take two arrays (of the same length) and interweave them
+  // e.g., interlace([1,2,3],[4,5,6]) 
+  // >> [1,4,2,5,3,6]
+  // you'll want to create a variable to hold your results
+  // return this variable at the end
 }
